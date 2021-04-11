@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--对应mapper-->
+<mapper namespace="com.pn.dao.UserMapper">
+
+    <select id="getUserList" resultType="com.pn.entity.User">
+        select * from mybatis.user
+    </select>
+<!--    #{id}取Mapper里面传入的参数值-->
+    <select id="getUserById" parameterType="int" resultType="com.pn.entity.User">
+        select * from mybatis.user where id=#{id};
+    </select>
+    <select id="getUserById2" parameterType="map" resultType="com.pn.entity.User">
+        select * from mybatis.user where id=#{mid};
+    </select>
+<!--    map下values即key值不用和数据库字段一一对应只需要和键值对对应-->
+    <insert id="addUser2" parameterType="map">
+        insert into mybatis.user (id,name,pwd) values(#{mid},#{mname},#{mpwd})
+    </insert>
+
+
+<!--insert用户 返回值类型User写完全 对象中的属性可以直接取出-->
+    <insert id="addUser" parameterType="com.pn.entity.User">
+        insert into mybatis.user (id,name,pwd) values(#{id},#{name},#{pwd})
+    </insert>
+<!--标签写对应的更新 写select 若接口是int 不允许实现方法写void类型-->
+    <update id="updateUser" parameterType="com.pn.entity.User">
+        update mybatis.user set pwd =#{pwd} where id=#{id}
+    </update>
+    <delete id="deleteUser" parameterType="int">
+        delete from mybatis.user where id=#{id}
+    </delete>
+
+    <select id="getUserLike" resultType="com.pn.entity.User">
+        select * from mybatis.user where name like "%"#{value}"%"
+    </select>
+</mapper>

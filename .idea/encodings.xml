@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/Cache/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Cache/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/DynamicSql/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/DynamicSql/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Ehcache/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Ehcache/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/annotation/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/annotation/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/config-02/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/config-02/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/log/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/log/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/select-02/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/select-02/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/select/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/select/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

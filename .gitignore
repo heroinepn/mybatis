@@ -1,0 +1,6 @@
+# Project exclude paths
+/Cache/target/
+/DynamicSql/target/
+/out/
+/select/target/
+/select-02/target/

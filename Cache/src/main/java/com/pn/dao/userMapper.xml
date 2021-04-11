@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pn.dao.userMapper">
+<!--   同一Mapper 方法下适用二级缓存-->
+<!--    如果只有一个cache标签实体类要序列化-->
+<!--    <cache-->
+<!--            eviction="FIFO" size="512" readOnly="true" flushInterval="60000"/>-->
+<!--   <cache/>-->
+<!-- 添加ehcache依赖-->
+    <cache type="org.mybatis.caches.ehcache.EhcacheCache">
+
+    </cache>
+    <select id="queryUserById"  resultType="user">
+
+           select * from mybatis.user where id= #{id}
+    </select>
+    <update id="updateUser" parameterType="user" >
+        update mybatis.user set name= #{name},pwd= #{pwd} where id = #{id}
+    </update>
+</mapper>
